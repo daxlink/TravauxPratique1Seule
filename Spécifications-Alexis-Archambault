@@ -1,0 +1,24 @@
+1. Il peut y avoir des commandes incorrectes. Une commande est incorrecte si :
+	Le nom du client ou le plat n’existe pas (vu précédemment).
+	Des chiffres sont erronés (quantité de plats commandés).
+Le client de la commande n'est pas dans la liste des clients
+Le plat de la commande n'est pas dans la liste des plats
+Nombre négatif de repas
+nombre élevé de repas(max 10)
+	
+2. En sortie, on souhaite avoir une facture affichée à l’écran (terminal) et éditée dans le fichier (Facture-du-date-heure.txt).
+Sortir la facture sur le terminal
+créer un fichier texte avec la date et l'heure ainsi que la facture
+
+3. Dans ces sorties (Terminal, Facture-du-date-heure.txt), vous devez afficher toutes les commandes incorrectes (les détails de la commande et la raison de l’erreur) avant les factures. L’ergonomie de l’affichage est laissée à votre discrétion.
+identifier les erreurs dans les commande avant d'afficher la facture dans le terminal ainsi que dans le fichier texte
+
+4. Si un client a une facture de 0$, sa facture n’est pas affichée dans le fichier de sortie.
+Si le client n'achète rien, ne pas l'afficher
+
+5. Les taxes sont maintenant appliquées (à raison de TPS 5% et TVQ 9,975%).
+appliquer la TPS a chaque facture
+appliquer la TVQ a chaque facture
+
+6. Le calcul de la facture doit se faire par client. 
+Faire calculer la facture par client
