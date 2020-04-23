@@ -22,13 +22,6 @@ public class ClientTest {
 	}
 
 	@Test
-	public void testClientStringDouble() {
-		Client clientTest = new Client("Alain", 13.50);
-		
-		assertNotNull(clientTest);
-	}
-
-	@Test
 	public void testGetNom() {
 		Client clientTest = new Client("Alain");
 		
@@ -44,25 +37,10 @@ public class ClientTest {
 	}
 
 	@Test
-	public void testGetTotal() {
-		Client clientTest = new Client("Alain", 13.50);
-		
-		assertEquals(13.50, clientTest.getTotal(), 0.01);
-	}
-
-	@Test
-	public void testSetTotal() {
-		Client clientTest = new Client("Alain", 13.50);
-		clientTest.setTotal(15);
-		
-		assertEquals(15, clientTest.getTotal(), 0.01);
-	}
-
-	@Test
 	public void testEqualsObject() {
 		Client clientTest = new Client("Alain");
-		Client clientTestTrue = new Client("Alain", 0.00);
-		Client clientTestFalse = new Client("George", 13.50); 
+		Client clientTestTrue = new Client("Alain");
+		Client clientTestFalse = new Client("George"); 
 		Plat platTest = new Plat("Spaghetti");
 		Client clientNull = null;
 		

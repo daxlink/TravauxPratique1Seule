@@ -9,36 +9,39 @@ import org.junit.Test;
 public class MainTest {
 
 	@Test
-	public void ajouterClient() throws IOException {
-		assertTrue(Main.ajouterClient("Archi"));
-		assertTrue(Main.ajouterClient("Émilie"));
+	public void testAjouterClient() throws IOException {
+		assertTrue(Main.ajouterClient("Alain"));
 		
-		assertFalse(Main.ajouterClient("Archi22"));
-		assertFalse(Main.ajouterClient("123456"));
-	}
-	
-	@Test
-	public void ajouterPlat() throws IOException {
-		assertTrue(Main.ajouterPlat("Repas_Familliale 15.50"));
-		assertTrue(Main.ajouterPlat("Aile_Poulet 8"));
-		
-		assertFalse(Main.ajouterPlat("2Repas_Familliale"));
-		assertFalse(Main.ajouterPlat("123456"));
-		assertFalse(Main.ajouterPlat("123456 deux"));
+		assertFalse(Main.ajouterClient("Alain22"));
+		assertFalse(Main.ajouterClient("54222"));
+		assertFalse(Main.ajouterClient("22.04"));
 		
 	}
-	
 
 	@Test
-	public void ajouterCommande() throws IOException {
-		assertTrue(Main.ajouterCommande("JonathanRepas_Familliale 3"));
-		assertTrue(Main.ajouterCommande("Alain Aile_Poulet 4"));
+	public void testAjouterPlat() throws IOException {
+		assertTrue(Main.ajouterPlat("Pizza 10.50"));
+		assertTrue(Main.ajouterPlat("Pizza 10"));
 		
-		assertFalse(Main.ajouterCommande("Albert Repas_Familliale 4.6"));
-		assertFalse(Main.ajouterCommande("Jean 2 Aile"));
+		assertFalse(Main.ajouterPlat("Alain22"));
+		assertFalse(Main.ajouterPlat("10 Pizza"));
+		assertFalse(Main.ajouterPlat("22.04"));
+	}
+
+	@Test
+	public void testAjouterCommande() throws IOException {
+		assertTrue(Main.ajouterCommande("Alain Pizza 2"));
+		assertTrue(Main.ajouterCommande("AlainPizza 2"));
+		assertTrue(Main.ajouterCommande("Alain Aile_Poulet 2"));
 		
 	}
-	
-	
+
+	@Test
+	public void testNbPlatCorrect() {
+		assertTrue(Main.nbPlatCorrect(3));
+		
+		assertFalse(Main.nbPlatCorrect(-4));
+		assertFalse(Main.nbPlatCorrect(22));
+	}
 
 }
