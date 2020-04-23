@@ -1,0 +1,27 @@
+
+Facture Roger
+
+1 Poutine	10,50
+
+Sous-total	10,50
+TPS		0,53
+TVQ		1,05
+Total		12,08
+Facture Céline
+
+2 Frites	5,00
+1 Repas_Poulet	15,75
+
+Sous-total	20,75
+TPS		1,04
+TVQ		2,07
+Total		23,86
+Facture Alain
+
+2 Frites	5,00
+1 Pizza	8,00
+
+Sous-total	13,00
+TPS		0,65
+TVQ		1,30
+Total		14,95
